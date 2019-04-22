@@ -1,4 +1,4 @@
-package pages;
+package assignmentOnePages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 public class propertyPage {
 	
 
-	@FindBy(how = How.CLASS_NAME, using = "ui-agent__name")
+	@FindBy(how = How.XPATH, using = "//h4[@class='ui-agent__name']")
 	WebElement agentName;
 	
 	

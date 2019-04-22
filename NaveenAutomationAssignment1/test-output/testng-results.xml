@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33202" started-at="2019-04-19T12:01:32Z" finished-at="2019-04-19T12:02:05Z">
+  <suite name="Default suite" duration-ms="39221" started-at="2019-04-20T06:53:49Z" finished-at="2019-04-20T06:54:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33202" started-at="2019-04-19T12:01:32Z" finished-at="2019-04-19T12:02:05Z">
+    <test name="Default test" duration-ms="39221" started-at="2019-04-20T06:53:49Z" finished-at="2019-04-20T06:54:28Z">
       <class name="tests.TC_001">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:tests.TC_001@4b9e13df]" name="setUpTest" is-config="true" duration-ms="15227" started-at="2019-04-19T12:01:32Z" finished-at="2019-04-19T12:01:47Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:tests.TC_001@4b9e13df]" name="setUpTest" is-config="true" duration-ms="10362" started-at="2019-04-20T06:53:49Z" finished-at="2019-04-20T06:53:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="FAIL" signature="SearchProperties()[pri:1, instance:tests.TC_001@4b9e13df]" name="SearchProperties" duration-ms="17047" started-at="2019-04-19T12:01:47Z" finished-at="2019-04-19T12:02:04Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="SearchProperties()[pri:0, instance:tests.TC_001@4b9e13df]" name="SearchProperties" duration-ms="15816" started-at="2019-04-20T06:53:59Z" finished-at="2019-04-20T06:54:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProperties -->
+        <test-method status="PASS" signature="printPropertyPrices()[pri:2, instance:tests.TC_001@4b9e13df]" name="printPropertyPrices" duration-ms="5972" started-at="2019-04-20T06:54:15Z" finished-at="2019-04-20T06:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printPropertyPrices -->
+        <test-method status="PASS" signature="checkAgent()[pri:3, instance:tests.TC_001@4b9e13df]" name="checkAgent" duration-ms="6870" started-at="2019-04-20T06:54:21Z" finished-at="2019-04-20T06:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAgent -->
+        <test-method status="FAIL" signature="verifyAgent()[pri:4, instance:tests.TC_001@4b9e13df]" name="verifyAgent" duration-ms="153" started-at="2019-04-20T06:54:28Z" finished-at="2019-04-20T06:54:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Balgores] but found [Balgores, RM14]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at tests.TC_001.SearchProperties(TC_001.java:48)
+              <![CDATA[java.lang.AssertionError: expected [Balgores] but found [Balgores, RM14]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at pages.agentPage.verifyAgentName(agentPage.java:15)
+at tests.TC_001.verifyAgent(TC_001.java:69)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,11 +65,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchProperties -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:tests.TC_001@4b9e13df]" name="tearDownTest" is-config="true" duration-ms="895" started-at="2019-04-19T12:02:04Z" finished-at="2019-04-19T12:02:05Z">
+        </test-method> <!-- verifyAgent -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:tests.TC_001@4b9e13df]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2019-04-20T06:54:28Z" finished-at="2019-04-20T06:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->

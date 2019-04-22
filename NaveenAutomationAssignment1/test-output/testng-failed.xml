@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.TC_001">
         <methods>
+          <include name="verifyAgent"/>
           <include name="setUpTest"/>
           <include name="tearDownTest"/>
-          <include name="SearchProperties"/>
         </methods>
       </class> <!-- tests.TC_001 -->
     </classes>

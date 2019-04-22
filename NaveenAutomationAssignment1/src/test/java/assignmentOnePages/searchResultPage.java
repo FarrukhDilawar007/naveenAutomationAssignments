@@ -1,4 +1,4 @@
-package pages;
+package assignmentOnePages;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,9 +25,9 @@ public class searchResultPage {
 		ArrayList<String> obtainedPrices = new ArrayList<String>();
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[@class = 'ui-pricing__main-price ui-text-t4']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@class='listing-results-price text-price']")));
 		
-		List<WebElement> priceTags =  driver.findElements(By.xpath("//p[@class = 'ui-pricing__main-price ui-text-t4']"));
+		List<WebElement> priceTags =  driver.findElements(By.xpath("//a[@class='listing-results-price text-price']"));
 		System.out.println(priceTags.size());
 		
 		for(WebElement element:priceTags) {
@@ -36,15 +36,17 @@ public class searchResultPage {
 		
 		Collections.sort(obtainedPrices, Collections.reverseOrder());
 		
-		for(int i=0; i<=obtainedPrices.size();i++) {
+		for(int i=0; i<obtainedPrices.size();i++) {
 			System.out.println(obtainedPrices.get(i));				
 		}
 		
 	}
 		
-			public void clickonfifthProperty() {
-		
-				driver.findElement(By.xpath("(//p[@class = 'ui-pricing__main-price ui-text-t4'])[5]")).click();
+		public void clickonfifthProperty() {
+				
+				boolean test = driver.findElement(By.xpath("(//a[@class='listing-results-price text-price'])[8]")).isDisplayed();
+				driver.findElement(By.xpath("(//a[@class='listing-results-price text-price'])[8]")).click();
+				System.out.println("Clicked");
 		}
 	
 }

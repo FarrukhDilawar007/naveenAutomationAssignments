@@ -1,4 +1,4 @@
-package pages;
+package assignmentOnePages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

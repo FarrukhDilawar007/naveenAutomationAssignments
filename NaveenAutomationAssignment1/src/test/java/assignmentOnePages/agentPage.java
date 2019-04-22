@@ -1,4 +1,4 @@
-package pages;
+package assignmentOnePages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +13,8 @@ public class agentPage {
 
 	public void verifyAgentName(String expectedAgentName) {
 		Assert.assertEquals(AgentName.getText(), expectedAgentName);
+		
+		
 		System.out.println("Agent Verified.");
 	}
 	
